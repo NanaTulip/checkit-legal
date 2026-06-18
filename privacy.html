@@ -7,67 +7,77 @@
 
 <style>
 
-.section {
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--accent-dark);
-  margin: 28px 0 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+:root {
+  --accent: #28a745;
+  --accent-dark: #1e7e34;
+  --text: #111;
+  --muted: #666;
 }
 
-.section:first-of-type {
-  margin-top: 0;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(180deg, #f4faf6 0%, #ffffff 220px);
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  line-height: 1.7;
 }
 
-.section::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--accent);
-  display: inline-block;
-}
-
-.card p {
-  margin: 0 0 18px;
-  font-size: 15.5px;
-  color: #333;
-}
-
-.card p:last-of-type {
-  margin-bottom: 0;
-}
-
-.divider {
-  border: none;
-  border-top: 1px solid rgba(0,0,0,0.06);
-  margin: 24px 0;
-}
-
-a {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.contact {
-  margin-top: 8px;
-}
-
-.footer {
+.hero {
   text-align: center;
-  margin-top: 32px;
-  font-weight: 700;
-  color: var(--accent);
-  font-size: 15px;
+  padding: 56px 20px 28px;
 }
 
+.hero .logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.25);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: -0.3px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.updated {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--accent-dark);
+  background: rgba(40, 167, 69, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px 20px 60px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 36px 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.06);
 </style>
 </head>
 
@@ -168,11 +178,6 @@ a:hover {
 
 </body>
 </html>
-
-
-
-
-
 
 
 
