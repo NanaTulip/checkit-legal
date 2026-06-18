@@ -7,50 +7,65 @@
 
 <style>
 
-body{
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
-background:#ffffff;
-margin:0;
-padding:40px 20px;
-color:#111;
-line-height:1.6;
+.section {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--accent-dark);
+  margin: 28px 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.container{
-max-width:750px;
-margin:auto;
+.section:first-of-type {
+  margin-top: 0;
 }
 
-h1{
-font-size:28px;
-margin-bottom:10px;
+.section::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
 }
 
-.subtitle{
-color:#555;
-margin-bottom:30px;
+.card p {
+  margin: 0 0 18px;
+  font-size: 15.5px;
+  color: #333;
 }
 
-.card{
-background:#f9f9f9;
-padding:30px;
-border-radius:12px;
+.card p:last-of-type {
+  margin-bottom: 0;
 }
 
-.section{
-font-weight:600;
-margin-top:25px;
-margin-bottom:8px;
-font-size:16px;
+.divider {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  margin: 24px 0;
 }
 
-p{
-margin-bottom:16px;
-font-size:15px;
+a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.contact{
-margin-top:20px;
+a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  margin-top: 8px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 32px;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 15px;
 }
 
 </style>
@@ -58,81 +73,101 @@ margin-top:20px;
 
 <body>
 
+<div class="hero">
+  <div class="logo-badge">✓</div>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Your privacy matters. This page explains how CheckIT handles data.</p>
+  <span class="updated">Last updated: June 2026</span>
+</div>
+
 <div class="container">
 
-<h1>Privacy Policy</h1>
+  <div class="card">
 
-<p class="subtitle">
-Your privacy matters. This page explains how CheckIT handles data.
-</p>
+    <p class="section">Information We Collect</p>
+    <p>
+      CheckIT may collect limited information necessary to operate the app.
+      This may include your account email (if you create an account) and claims
+      you choose to analyze or save.
+    </p>
 
-<p>Last updated: April 2026</p>
-  
-<div class="card">
+    <p class="section">Saved Claims &amp; Account Data</p>
+    <p>
+      If you choose to save claims, they are stored securely so you can revisit
+      them later. Saved claim history is associated with your account and is not
+      shared publicly.
+    </p>
 
-<p class="section">Information We Collect</p>
-<p>
-CheckIT may collect limited information necessary to operate the app.
-This may include your account email (if you create an account) and claims
-you choose to analyze or save.
-</p>
+    <p class="section">Images, Links, and Text Submitted</p>
+    <p>
+      Claims submitted through text, screenshots, or links are processed in order
+      to analyze the information and generate results. This content is used only
+      for analysis and is not sold or shared for advertising purposes.
+    </p>
 
-<p class="section">Saved Claims & Account Data</p>
-<p>
-If you choose to save claims, they are stored securely so you can revisit
-them later. Saved claim history is associated with your account and is not
-shared publicly.
-</p>
+    <hr class="divider">
 
-<p class="section">Images, Links, and Text Submitted</p>
-<p>
-Claims submitted through text, screenshots, or links are processed in order
-to analyze the information and generate results. This content is used only
-for analysis and is not sold or shared for advertising purposes.
-</p>
+    <p class="section">Third-Party Services</p>
+    <p>
+      CheckIT uses the following third-party services to operate and improve the app:
+      Firebase (Google) for authentication and data storage, OpenAI for claim analysis,
+      and SerpAPI for retrieving source information. These providers may process limited
+      data necessary to deliver these services and are bound by their own privacy policies.
+    </p>
 
-<p class="section">Third-Party Services</p>
-<p>
-CheckIT may rely on trusted third-party services to help analyze claims and
-provide supporting information. These services may process limited claim
-data in order to generate results.
-</p>
+    <p class="section">Crash Reporting</p>
+    <p>
+      CheckIT uses Firebase Crashlytics to identify and fix technical issues.
+      This may include device information and crash logs, which help us improve app stability.
+    </p>
 
-<p class="section">Data Security</p>
-<p>
-CheckIT is designed with user privacy in mind. Reasonable security measures
-are used to protect stored information and prevent unauthorized access.
-</p>
+    <hr class="divider">
 
-<p class="section">Your Choices</p>
-<p>
-You control whether to create an account, save claims, or submit information
-for analysis. You may delete your account and saved data at any time from
-within the app.
-</p>
+    <p class="section">Data Security</p>
+    <p>
+      CheckIT is designed with user privacy in mind. Reasonable security measures
+      are used to protect stored information and prevent unauthorized access.
+      If you delete your account, your data is permanently removed from our systems immediately.
+    </p>
 
-<p class="section">Changes to This Policy</p>
-<p>
-This privacy policy may be updated from time to time to reflect improvements
-to the app or changes in services used by CheckIT.
-</p>
+    <p class="section">Children's Privacy</p>
+    <p>
+      CheckIT is not directed to children under 13, and we do not knowingly collect personal
+      information from children under 13. If you believe a child has provided us with personal
+      information, please contact us immediately at
+      <a href="mailto:support@checkitapp.in">support@checkitapp.in</a>.
+    </p>
 
-<p class="contact">
-If you have questions about this Privacy Policy, please contact:<br>
-support@checkitapp.in
-</p>
+    <hr class="divider">
 
-</div>
+    <p class="section">Your Choices</p>
+    <p>
+      You control whether to create an account, save claims, or submit information
+      for analysis. You may delete your account and saved data at any time from
+      within the app. Depending on your location, you may have rights under applicable
+      privacy laws (such as the GDPR or CCPA) to access, correct, or delete your personal information.
+    </p>
+
+    <p class="section">Changes to This Policy</p>
+    <p>
+      This privacy policy may be updated from time to time to reflect improvements
+      to the app or changes in services used by CheckIT.
+    </p>
+
+    <hr class="divider">
+
+    <p class="contact">
+      If you have questions about this Privacy Policy, please contact:
+      <br>
+      <a href="mailto:support@checkitapp.in">support@checkitapp.in</a>
+    </p>
+
+  </div>
 
 </div>
 
 </body>
 </html>
-
-
-
-
-
 
 
 
