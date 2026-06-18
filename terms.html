@@ -3,50 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <title>CheckIT Terms & Conditions</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+
 <style>
 
-body{
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
-background:#ffffff;
-margin:0;
-padding:40px 20px;
-color:#111;
-line-height:1.6;
+:root {
+  --accent: #28a745;
+  --accent-dark: #1e7e34;
+  --text: #111;
+  --muted: #666;
 }
 
-.container{
-max-width:750px;
-margin:auto;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(180deg, #f4faf6 0%, #ffffff 220px);
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  line-height: 1.7;
 }
 
-h1{
-font-size:28px;
-margin-bottom:10px;
+.hero {
+  text-align: center;
+  padding: 56px 20px 28px;
 }
 
-.subtitle{
-color:#555;
-margin-bottom:30px;
+.hero .logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.25);
 }
 
-.card{
-background:#f9f9f9;
-padding:30px;
-border-radius:12px;
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: -0.3px;
 }
 
-p{
-margin-bottom:18px;
-font-size:15px;
+.subtitle {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 4px;
 }
 
-.footer{
-margin-top:25px;
-font-weight:600;
-color:#28a745;
+.updated {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--accent-dark);
+  background: rgba(40, 167, 69, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px 20px 60px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 36px 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.card p {
+  margin: 0 0 18px;
+  font-size: 15.5px;
+  color: #333;
+}
+
+.card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  margin: 24px 0;
+}
+
+a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 32px;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 15px;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 28px;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 </style>
@@ -54,71 +128,76 @@ color:#28a745;
 
 <body>
 
+<div class="hero">
+  <div class="logo-badge">✓</div>
+  <h1>Terms &amp; Conditions</h1>
+  <p class="subtitle">Please review the following information carefully.</p>
+  <span class="updated">Last updated: June 2026</span>
+</div>
+
 <div class="container">
 
-<h1>Terms & Conditions</h1>
+  <div class="card">
 
-<p class="subtitle">
-Please review the following information carefully.
-</p>
+    <p>
+      CheckIT is provided for informational and educational purposes only.
+    </p>
 
- <p>Last updated: June 2026</p>
+    <p>
+      CheckIT analyzes claims and information using available sources and contextual signals.
+      While the app aims to provide helpful context, CheckIT does not guarantee the accuracy,
+      completeness, or reliability of any analysis or output.
+    </p>
 
-<div class="card">
+    <p>
+      By using CheckIT, you acknowledge that you are responsible for how you interpret and
+      act on the information provided. Users agree not to misuse the service, interfere with
+      the operation of the app, or attempt to reverse engineer or exploit the system.
+    </p>
 
-<p>
-CheckIT is provided for informational and educational purposes only.
-</p>
+    <hr class="divider">
 
-<p>
-CheckIT analyzes claims and information using available sources and contextual signals.
-While the app aims to provide helpful context, CheckIT does not guarantee the accuracy,
-completeness, or reliability of any analysis or output.
-</p>
+    <p>
+      CheckIT offers a free tier and an optional Pro subscription tier.
+      Pro subscriptions are billed on a recurring basis through the Apple App Store or Google Play Store, depending on your device.
+      Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period.
+      You can manage or cancel your subscription at any time through your Apple ID or Google Play account settings.
+      Refunds are subject to the policies of the Apple App Store or Google Play Store.
+    </p>
 
-<p>
-By using CheckIT, you acknowledge that you are responsible for how you interpret and
-act on the information provided. Users agree not to misuse the service, interfere with
-the operation of the app, or attempt to reverse engineer or exploit the system.
-</p>
+    <p>
+      CheckIT is intended for users aged 13 and older. By using CheckIT, you confirm that you meet this age requirement.
+    </p>
 
-</p>
-CheckIT offers a free tier and an optional Pro subscription tier. 
-Pro subscriptions are billed on a recurring basis through the Apple App Store or Google Play Store, depending on your device. 
-Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. 
-You can manage or cancel your subscription at any time through your Apple ID or Google Play account settings. 
-Refunds are subject to the policies of the Apple App Store or Google Play Store.
-</p>
+    <hr class="divider">
 
-</p>
-CheckIT is intended for users aged 13 and older. By using CheckIT, you confirm that you meet this age requirement.
-</p>
+    <p>
+      CheckIT may be updated, modified, or discontinued at any time without notice.
+      CheckIT reserves the right to suspend or terminate access to the app for users who violate these terms.
+    </p>
 
-<p>
-CheckIT may be updated, modified, or discontinued at any time without notice.
-CheckIT reserves the right to suspend or terminate access to the app for users who violate these terms.
-</p>
+    <p>
+      CheckIT is not affiliated with, sponsored by, or endorsed by any external sources
+      referenced during claim analysis. Sources are displayed for informational and
+      transparency purposes only.
+    </p>
 
-<p>
-CheckIT is not affiliated with, sponsored by, or endorsed by any external sources
-referenced during claim analysis. Sources are displayed for informational and
-transparency purposes only.
-</p>
+    <hr class="divider">
 
-<p>
-These terms are governed by the laws of the United States, without regard to conflict of law principles.
-CheckIT and its creators are not liable for any damages or decisions made based on the use of this app.
-<br><br>
-If you have questions regarding these terms, please contact:
-<br>
-support@checkitapp.in
-</p>
+    <p>
+      These terms are governed by the laws of the United States, without regard to conflict of law principles.
+      CheckIT and its creators are not liable for any damages or decisions made based on the use of this app.
+    </p>
 
-<p class="footer">
-Use thoughtfully. Verify responsibly.
-</p>
+    <p>
+      If you have questions regarding these terms, please contact:
+      <br>
+      <a href="mailto:support@checkitapp.in">support@checkitapp.in</a>
+    </p>
 
-</div>
+  </div>
+
+  <p class="footer">Use thoughtfully. Verify responsibly.</p>
 
 </div>
 
